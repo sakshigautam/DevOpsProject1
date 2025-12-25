@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-lb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lb
+  template:
+    metadata:
+      labels:
+        app: lb
+    spec:
+      containers:
+      - name: nginx-lb
+        image: your-dockerhub-username/nginx-lb:latest
+        ports:
+        - containerPort: 80
