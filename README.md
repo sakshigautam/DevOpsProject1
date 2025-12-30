@@ -15,6 +15,7 @@ minikube ip
 
 
 Add to /etc/hosts:
+if windows do C:/Windows/System32/etc/hosts - Run as administrator in notepad and then edit
 
 <minikube-ip> nginx.local
 
@@ -22,3 +23,9 @@ Add to /etc/hosts:
 Open:
 
 http://nginx.local
+
+Use minikube tunnel - run this command as administrator
+
+If it fails , then again edit hosts file as given below
+
+127.0.0.1 nginx.local
