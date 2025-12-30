@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: web
-        image: sakshi19091998/nginx-web:latest
+        image: <dockerhubusername>/nginx-web:latest
         ports:
         - containerPort: 80
