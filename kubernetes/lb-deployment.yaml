@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx-lb
-        image: your-dockerhub-username/nginx-lb:latest
+        image: sakshi19091998/nginx-lb:latest
         ports:
         - containerPort: 80
